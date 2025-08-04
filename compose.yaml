@@ -6,7 +6,7 @@ services:
     ports:
       - "5432:5432"
     environment:
-      POSTGRES_DB: car_post_storage
+      POSTGRES_DB: car_post
       POSTGRES_USER: admin
       POSTGRES_PASSWORD: Password
     volumes:
@@ -18,8 +18,8 @@ services:
           echo 'Aguardando PostgreSQL iniciar...'
           sleep 2
         done;
-        psql -U admin -d car_post_storage -c 'CREATE SCHEMA IF NOT EXISTS analytics;' &&
-        psql -U admin -d car_post_storage -c 'CREATE SCHEMA IF NOT EXISTS storage;' &&
+        psql -U admin -d car_post -c 'CREATE SCHEMA IF NOT EXISTS analytics;' &&
+        psql -U admin -d car_post -c 'CREATE SCHEMA IF NOT EXISTS storage;' &&
         wait
       "
 
