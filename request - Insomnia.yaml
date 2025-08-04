@@ -1,0 +1,200 @@
+type: collection.insomnia.rest/5.0
+name: Scratch Pad
+meta:
+  id: wrk_scratchpad
+  created: 1753212395459
+  modified: 1753212395459
+  description: ""
+collection:
+  - name: Hexa_Api
+    meta:
+      id: fld_42247ad13a2e44878cd1047d183451c1
+      created: 1753312312304
+      modified: 1753312312304
+      sortKey: -1753312312304
+      description: ""
+  - name: MicroServiços - Kafka - Spring
+    meta:
+      id: fld_e15561060bd244678eb6011b0678d2d9
+      created: 1754231384748
+      modified: 1754266812689
+      sortKey: -1754231384748
+      description: ""
+    children:
+      - url: http://localhost:8085/owner
+        name: 8085 - OwnerPost
+        meta:
+          id: req_c2ebd134c966486286abac7730c4f635
+          created: 1754231400068
+          modified: 1754231483637
+          isPrivate: false
+          description: ""
+          sortKey: -1754231400068
+        method: POST
+        body:
+          mimeType: application/json
+          text: |
+            {
+              "name": "Carlos Silva",
+              "type": "Pessoa Física",
+              "contactNumber": "+55 11 98765-4321"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.3.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8085/api/car/posts
+        name: 8085 -Car Post
+        meta:
+          id: req_69513d0af1a648878ce3ce0ac38467d5
+          created: 1754231944112
+          modified: 1754266719096
+          isPrivate: false
+          description: ""
+          sortKey: -1753771859594.5
+        method: POST
+        body:
+          mimeType: application/json
+          text: |
+            {
+              "model": "Fiat Uno",
+              "brand": "Fiat",
+              "price": 25000,
+              "description": "Carro compacto, econômico e ideal para cidade.",
+              "engineVersion": "1.0 Flex",
+              "city": "São Paulo",
+              "createdDate": "2025-08-04",
+              "ownerId": 12345,
+              "ownerName": "João Silva",
+              "ownerType": "Pessoa Física",
+              "contact": "(11) 98765-4321"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.3.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8085/api/car/posts
+        name: 8085 -Car Post
+        meta:
+          id: req_598e1786c3b44de692f7e4e79aed87f5
+          created: 1754233233425
+          modified: 1754233241144
+          isPrivate: false
+          description: ""
+          sortKey: -1753542089357.75
+        method: GET
+        body:
+          mimeType: application/json
+          text: ""
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.3.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8085/api/car/{id}
+        name: 8085 - CarPost
+        meta:
+          id: req_8d7ff2908d074ab7a819d851aec9e021
+          created: 1754266825214
+          modified: 1754266863326
+          isPrivate: false
+          description: ""
+          sortKey: -1754001629831.25
+        method: DELETE
+        body:
+          mimeType: application/json
+          text: |-
+            { 
+            	"id": 1 
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.3.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8085/api/car/1
+        name: 8085 -Car Post
+        meta:
+          id: req_e537cfcff175408da763950e6a1b0af8
+          created: 1754266898069
+          modified: 1754266992328
+          isPrivate: false
+          description: ""
+          sortKey: -1753656974476.125
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |
+            {
+              "model": "Fiat Uno",
+              "brand": "Fiat",
+              "price": 25000,
+              "description": "Carro compacto, econômico e ideal para cidade.",
+              "engineVersion": "1.0 Flex",
+              "city": "São Paulo",
+              "createdDate": "2025-08-04",
+              "ownerId": 12345,
+              "ownerName": "João Silva",
+              "ownerType": "Pessoa Física",
+              "contact": "(11) 98765-4321"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.3.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1753212476823
+    modified: 1753212476823
+environments:
+  name: Base Environment
+  meta:
+    id: env_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1753212476818
+    modified: 1753212476818
+    isPrivate: false
